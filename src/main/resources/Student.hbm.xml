@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN""http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	<class name="com.Student" table="STUDENT_DETAILS">
+		<id name="id" type="int" >
+			<column name = "ID"/>
+			<generator class="increment"/>
+	 	</id>
+		<property name="lastName" type = "java.lang.String" >
+			<column name="LAST_NAME" />
+		</property>
+		<property name="firstName" type = "java.lang.String" >
+			<column name="FIRST_NAME" />
+		</property>
+		<property name="phoneNo" type = "java.lang.String" >
+			<column name="PHONE_NO" />
+		</property>
+	 </class>
+</hibernate-mapping>
